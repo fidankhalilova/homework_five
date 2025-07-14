@@ -1,0 +1,27 @@
+.filters {
+    @include flex(row, space-between, center, nowrap, null);
+    padding: 50px 80px;
+    border-bottom: 1px solid $dark-gray;
+
+    .filter-btns {
+        @include flex(row, center, center, nowrap, 20px);
+
+        .btn {
+            flex: 1 0 0;
+            border: 1px solid $dark-gray;
+            background-color: $light-black;
+            padding: 24px 30px;
+            border-radius: 8px;
+            color: $gray;
+
+            &:hover {
+                background-color: $dark-gray;
+            }
+        }
+
+        #active-btn {
+            background-color: $dark-gray;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.sub-heading {
+    padding: 60px 80px;
+    border-bottom: 1px solid $dark-gray;
+    background-color: $light-black;
+
+    .sub-heading-place {
+        @include flex(row, space-between, center, nowrap, null);
+
+        .subH-text {
+            @include flex(column, start, null, nowrap, 20px);
+
+            .sub-cat-one {
+                width: 226px;
+                background-color: $dark-gray;
+                padding: 4px 8px;
+                border-radius: 4px;
+
+                p {
+                    color: $white;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    letter-spacing: -0.48px;
+                    background-color: $dark-gray;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                }
+            }
+
+            .sub-cat-two {
+                width: 150px;
+                background-color: $dark-gray;
+                padding: 4px 8px;
+                border-radius: 4px;
+
+                p {
+                    color: $white;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    letter-spacing: -0.48px;
+                    background-color: $dark-gray;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                }
+            }
+
+            h1 {
+                color: $white;
+                font-family: $head-font;
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                letter-spacing: -1.32px;
+            }
+        }
+
+        .subH-btn {
+            button {
+                padding: 18px 24px;
+                border-radius: 8px;
+                border: 1px solid $dark-gray;
+                background-color: $black;
+                color: $white;
+
+                i {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}

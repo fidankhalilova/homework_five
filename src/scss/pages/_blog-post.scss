@@ -1,0 +1,128 @@
+.blog-post {
+    padding: 60px 80px;
+    border-bottom: 1px solid $dark-gray;
+
+    .blog-place {
+        @include flex(row, center, center, nowrap, 60px);
+
+        .blog-img {
+            img {
+                width: 515px;
+                height: 325px;
+                object-fit: cover;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+        }
+
+        .blog-text {
+            @include flex(column, center, null, nowrap, 40px);
+
+            .head-and-about {
+                @include flex(column, null, null, nowrap, 20px);
+                h3 {
+                    // @include flex(column, start, center, nowrap, 14px);
+                    color: $white;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    letter-spacing: -0.72px;
+                }
+
+                p {
+                    color: $gray;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.54px;
+                }
+            }
+
+            table {
+                margin-bottom: 10px;
+
+                tr {
+                    th {
+                        color: $gray;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                        letter-spacing: -0.48px;
+                    }
+
+                    td {
+                        color: $white;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                        letter-spacing: -0.48px;
+                    }
+                }
+            }
+
+            .blog-btns {
+                @include flex(row, space-between, center, nowrap, null);
+
+                .act-btns {
+                    @include flex(row, space-between, start, nowrap, 20px);
+
+                    .likes {
+                        @include flex(row, center, center, nowrap, 5px);
+                        background-color: $dark-gray;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+
+                        p {
+                            color: $gray;
+                            font-family: $head-font;
+                            font-size: $font-xs;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%;
+                            letter-spacing: -0.42px;
+                        }
+
+                        i {
+                            color: $gray;
+                        }
+                    }
+
+                    .sent {
+                        @include flex(row, center, center, nowrap, 5px);
+                        background-color: $dark-gray;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+
+                        p {
+                            color: $gray;
+                            font-family: $head-font;
+                            font-size: $font-xs;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%;
+                            letter-spacing: -0.42px;
+                        }
+
+                        i {
+                            color: $gray;
+                        }
+                    }
+                }
+
+                .read-more {
+                    button {
+                        padding: 18px 24px;
+                        border-radius: 8px;
+                        border: 1px solid $dark-gray;
+                        background-color: $black;
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+a {
+    color: gray;
+    text-decoration: none;
+    font-family: $base-font;
+    font-size: $font-sm;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+
+    &:hover {
+        border-color: $gray;
+        color: $yellow;
+    }
+}
