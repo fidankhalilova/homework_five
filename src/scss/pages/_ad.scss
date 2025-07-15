@@ -1,0 +1,107 @@
+.ad {
+    background-color: $light-black;
+    padding: 80px;
+    border-bottom: 1px solid $dark-gray;
+
+    .ad-place {
+        @include flex(column, null, null, nowrap, 50px);
+        .first-sec {
+            @include flex(row, center, center, nowrap, 40px);
+
+            .ad-logo {
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            .ad-info {
+                @include flex(column, null, null, nowrap, 18px);
+
+                #cat {
+                    color: $white;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    letter-spacing: -0.48px;
+                    background-color: $dark-gray;
+                    padding: 2px;
+                    width: 220px;
+                    text-align: center;
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: $head-font;
+                    font-size: 44px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                    letter-spacing: -1.32px;
+                }
+
+                #desc {
+                    color: $gray;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.48px;
+                }
+            }
+        }
+
+        .other-links {
+            background-color: $black;
+            border: 1px solid $dark-gray;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid $light-black;
+            @include flex(row, center, null, nowrap, 10px);
+            align-self: stretch;
+
+            .link-box {
+                padding: 30px;
+                flex: 1 0 0;
+                background-color: $light-black;
+                border-radius: 10px;
+                border: 1px solid $dark-gray;
+                @include flex(column, null, flex-start, nowrap, 16px);
+
+                .line-heading {
+                    @include flex(row, center, center, nowrap, 170px);
+                    h2 {
+                        color: $white;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%;
+                        letter-spacing: -0.54px;
+                    }
+
+                    button {
+                        border: none;
+                        border-radius: 50%;
+                        background-color: $yellow;
+                        height: 40px;
+                        width: 40px;
+
+                        i {
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                p {
+                    color: $gray;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.48px;
+                }
+            }
+        }
+    }
+}

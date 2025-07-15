@@ -1,0 +1,81 @@
+footer {
+    background-color: $light-black;
+    padding-top: 80px;
+    padding-bottom: 30px;
+
+    .footer-space {
+        .link-list {
+            padding-bottom: 30px;
+            @include flex(row, space-between, null, nowrap, null);
+            align-self: stretch;
+
+            .one-list {
+                @include flex(column, null, null, nowrap, 10px);
+
+                h4 {
+                    color: $white;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                    letter-spacing: -0.54px;
+                }
+
+                ul {
+                    @include flex(column, null, null, nowrap, 5px);
+
+                    li {
+                        text-decoration: none;
+                    }
+
+                    #btn {
+                        padding: 14px 16px;
+                        border-radius: 8px;
+                        border: 1px solid $dark-gray;
+                        background-color: $black;
+                        color: $gray;
+
+                        i {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-part {
+            @include flex(row, space-between, null, nowrap, 5px);
+            border-top: 1px solid $dark-gray;
+            padding-top: 40px;
+
+            #policy {
+                color: $gray;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                letter-spacing: -0.42px;
+            }
+
+            .socials {
+                @include flex(row, null, null, nowrap, 6px);
+
+                i {
+                    font-size: 22px;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+
+            #rights {
+                color: $gray;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                letter-spacing: -0.42px;
+            }
+        }
+    }
+}

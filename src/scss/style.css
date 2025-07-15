@@ -69,7 +69,7 @@ a:hover {
 }
 
 .sub-heading {
-  padding: 60px 80px;
+  padding: 80px;
   border-bottom: 1px solid #262626;
   background-color: #1A1A1A;
 }
@@ -252,6 +252,90 @@ nav .right-content .hamburger {
     font-size: 28px;
     align-self: stretch;
   }
+}
+
+footer {
+  background-color: #1A1A1A;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+footer .footer-space .link-list {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-self: stretch;
+}
+footer .footer-space .link-list .one-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+footer .footer-space .link-list .one-list h4 {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.54px;
+}
+footer .footer-space .link-list .one-list ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+footer .footer-space .link-list .one-list ul li {
+  text-decoration: none;
+}
+footer .footer-space .link-list .one-list ul #btn {
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background-color: #141414;
+  color: #98989A;
+}
+footer .footer-space .link-list .one-list ul #btn i {
+  color: #FFD11A;
+}
+footer .footer-space .bottom-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 5px;
+  border-top: 1px solid #262626;
+  padding-top: 40px;
+}
+footer .footer-space .bottom-part #policy {
+  color: #98989A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.42px;
+}
+footer .footer-space .bottom-part .socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+footer .footer-space .bottom-part .socials i {
+  font-size: 22px;
+}
+footer .footer-space .bottom-part .socials i:hover {
+  color: #FFD11A;
+}
+footer .footer-space .bottom-part #rights {
+  color: #98989A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.42px;
 }
 
 .head {
@@ -595,4 +679,331 @@ nav .right-content .hamburger {
 .filters .filter-btns #active-btn {
   background-color: #262626;
   color: white;
+}
+
+.tweet {
+  padding: 60px 80px;
+  border-bottom: 1px solid #262626;
+}
+.tweet .tweet-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  gap: 160px;
+}
+.tweet .tweet-place .pic-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.tweet .tweet-place .pic-name .profile-pic img {
+  border-radius: 42px;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.tweet .tweet-place .pic-name .acc-name h4 {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.54px;
+}
+.tweet .tweet-place .pic-name .acc-name p {
+  color: #98989A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+}
+.tweet .tweet-place .post-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 120px;
+}
+.tweet .tweet-place .post-details .post-preview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.tweet .tweet-place .post-details .post-preview #date {
+  color: #98989A;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.54px;
+}
+.tweet .tweet-place .post-details .post-preview h3 {
+  color: white;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.66px;
+}
+.tweet .tweet-place .post-details .post-preview #preview {
+  color: #98989A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+  background-color: #1A1A1A;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .likes p {
+  color: #98989A;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.42px;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .likes i {
+  color: #98989A;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .chat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+  background-color: #1A1A1A;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .chat p {
+  color: #98989A;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.42px;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .chat i {
+  color: #98989A;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .sent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+  background-color: #1A1A1A;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .sent p {
+  color: #98989A;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.42px;
+}
+.tweet .tweet-place .post-details .post-preview .act-btns .sent i {
+  color: #98989A;
+}
+.tweet .tweet-place .post-details .read-more button {
+  padding: 18px 24px;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background-color: #141414;
+  color: #98989A;
+}
+.tweet .tweet-place .post-details .read-more button i {
+  color: #FFD11A;
+}
+
+.video .rowk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 100px;
+  padding: 60px;
+  border-bottom: 1px solid #262626;
+}
+.video .rowk .one-video {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.video .rowk .one-video .video-prew img {
+  width: 590px;
+  height: 331px;
+}
+.video .rowk .one-video .video-desc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 3px;
+}
+.video .rowk .one-video .video-desc h3 {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+}
+.video .rowk .one-video .video-desc p {
+  color: #98989A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+}
+
+.ad {
+  background-color: #1A1A1A;
+  padding: 80px;
+  border-bottom: 1px solid #262626;
+}
+.ad .ad-place {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 50px;
+}
+.ad .ad-place .first-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+.ad .ad-place .first-sec .ad-logo img {
+  width: 120px;
+  height: 120px;
+}
+.ad .ad-place .first-sec .ad-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 18px;
+}
+.ad .ad-place .first-sec .ad-info #cat {
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+  background-color: #262626;
+  padding: 2px;
+  width: 220px;
+  text-align: center;
+}
+.ad .ad-place .first-sec .ad-info h1 {
+  color: white;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -1.32px;
+}
+.ad .ad-place .first-sec .ad-info #desc {
+  color: #98989A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+}
+.ad .ad-place .other-links {
+  background-color: #141414;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #1A1A1A;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-self: stretch;
+}
+.ad .ad-place .other-links .link-box {
+  padding: 30px;
+  flex: 1 0 0;
+  background-color: #1A1A1A;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+.ad .ad-place .other-links .link-box .line-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 170px;
+}
+.ad .ad-place .other-links .link-box .line-heading h2 {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.54px;
+}
+.ad .ad-place .other-links .link-box .line-heading button {
+  border: none;
+  border-radius: 50%;
+  background-color: #FFD11A;
+  height: 40px;
+  width: 40px;
+}
+.ad .ad-place .other-links .link-box .line-heading button i {
+  font-size: 24px;
+}
+.ad .ad-place .other-links .link-box p {
+  color: #98989A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.48px;
 }/*# sourceMappingURL=style.css.map */

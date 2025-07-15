@@ -1,0 +1,37 @@
+.video {
+    .rowk {
+        @include flex(row, center, center, nowrap, 100px);
+        padding: 60px;
+        border-bottom: 1px solid $dark-gray;
+        .one-video {
+            @include flex(column, null, null, nowrap, 20px);
+            .video-prew {
+                img {
+                    width: 590px;
+                    height: 331px;
+                }
+            }
+
+            .video-desc {
+                @include flex(column, null, null, nowrap, 3px);
+                h3 {
+                    color: $white;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    letter-spacing: -0.6px;
+                }
+
+                p {
+                    color: $gray;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.48px;
+                }
+            }
+        }
+    }
+}
