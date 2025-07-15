@@ -3,7 +3,11 @@
     border-bottom: 1px solid $dark-gray;
 
     .tweet-place {
-        @include flex(row, center, start, nowrap, 160px);
+        @include flex(row, center, start, null, 160px);
+
+        @media (max-width: 600px) {
+            @include flex(column, null, null, wrap, 30px);
+        }
 
 
         .pic-name {
@@ -41,10 +45,14 @@
         }
 
         .post-details {
-            @include flex(row, space-between, center, nowrap, 120px);
+            @include flex(row, space-between, center, null, 120px);
+
+            @media (max-width: 600px) {
+                @include flex(column, start, start, nowrap, 30px);
+            }
 
             .post-preview {
-                @include flex(column, null, null, nowrap, 20px);
+                @include flex(column, null, null, null, 20px);
 
                 #date {
                     color: $gray;
@@ -74,10 +82,10 @@
                 }
 
                 .act-btns {
-                    @include flex(row, null, start, nowrap, 20px);
+                    @include flex(row, null, start, null, 20px);
 
                     .likes {
-                        @include flex(row, center, center, nowrap, 5px);
+                        @include flex(row, center, center, null, 5px);
                         background-color: $light-black;
                         padding: 5px 10px;
                         border-radius: 10px;
@@ -98,7 +106,7 @@
                     }
 
                     .chat {
-                        @include flex(row, center, center, nowrap, 5px);
+                        @include flex(row, center, center, null, 5px);
                         background-color: $light-black;
                         padding: 5px 10px;
                         border-radius: 10px;
@@ -119,7 +127,7 @@
                     }
 
                     .sent {
-                        @include flex(row, center, center, nowrap, 5px);
+                        @include flex(row, center, center, null, 5px);
                         background-color: $light-black;
                         padding: 5px 10px;
                         border-radius: 10px;
@@ -143,6 +151,10 @@
             }
 
             .read-more {
+                @media (max-width: 600px) {
+                    @include flex(column, start, start, nowrap, 30px);
+                }
+
                 button {
                     padding: 18px 24px;
                     border-radius: 8px;

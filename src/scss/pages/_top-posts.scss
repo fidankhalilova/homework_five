@@ -3,10 +3,14 @@
     border-bottom: 1px solid $dark-gray;
 
     .post-row {
-        @include flex(row, center, center, nowrap, 30px);
+        @include flex(row, center, center, null, 30px);
+
+        @media (max-width: 600px) {
+            @include flex(row, center, center, wrap, 30px);
+        }
 
         .post-card {
-            @include flex(column, center, null, nowrap, 16px);
+            @include flex(column, center, null, null, 16px);
 
             .post-img {
                 img {
@@ -16,7 +20,8 @@
             }
 
             .post-text {
-                @include flex(column, flex-start, null, nowrap, 10px);
+                @include flex(column, flex-start, null, null, 10px);
+
                 h3 {
                     color: $white;
                     font-size: 20px;
@@ -57,7 +62,7 @@
                             line-height: 150%;
                             letter-spacing: -0.42px;
                         }
-                        
+
                         i {
                             color: $gray;
                         }
@@ -78,6 +83,7 @@
                             line-height: 150%;
                             letter-spacing: -0.42px;
                         }
+
                         i {
                             color: $gray;
                         }
@@ -85,17 +91,9 @@
                 }
 
                 .read-more {
-                    button {
-                        padding: 18px 40px;
-                        border-radius: 8px;
-                        border: 1px solid $dark-gray;
-                        background-color: $light-black;
-                        color: $gray;
-
-                        i {
-                            color: $yellow;
-                            font-size: 18px;
-                        }
+                    i {
+                        color: $yellow;
+                        font-size: 18px;
                     }
                 }
             }

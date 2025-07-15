@@ -4,7 +4,11 @@
     border-bottom: 1px solid $dark-gray;
 
     .filter-btns {
-        @include flex(row, center, center, nowrap, 20px);
+        @include flex(row, center, center, null, 20px);
+
+        @media (max-width: 600px) {
+            @include flex(row, center, center, wrap, 30px);
+        }
 
         .btn {
             flex: 1 0 0;

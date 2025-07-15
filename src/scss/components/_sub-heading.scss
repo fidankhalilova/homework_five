@@ -4,10 +4,14 @@
     background-color: $light-black;
 
     .sub-heading-place {
-        @include flex(row, space-between, center, nowrap, null);
+        @include flex(row, space-between, center, null, null);
+
+        @media (max-width: 600px) {
+            @include flex(column, center, null, null, 50px);
+        }
 
         .subH-text {
-            @include flex(column, start, null, nowrap, 20px);
+            @include flex(column, start, null, null, 20px);
 
             .sub-cat-one {
                 width: 226px;
@@ -55,6 +59,10 @@
                 font-weight: 500;
                 line-height: 130%;
                 letter-spacing: -1.32px;
+
+                @media (max-width: 600px) {
+                    font-size: 28px;
+                }
             }
         }
 
@@ -68,6 +76,10 @@
 
                 i {
                     color: $yellow;
+                }
+
+                @media (max-width: 600px) {
+                    align-self: stretch;
                 }
             }
         }

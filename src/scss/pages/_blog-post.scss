@@ -3,23 +3,37 @@
     border-bottom: 1px solid $dark-gray;
 
     .blog-place {
-        @include flex(row, center, center, nowrap, 60px);
+        @include flex(row, center, center, null, 60px);
+
+        @media (max-width: 600px) {
+            @include flex(column, null, null, null, 30px);
+        }
 
         .blog-img {
+            @media (max-width: 600px) {
+                @include flex(row, start, null, null, 30px);
+            }
+
             img {
                 width: 515px;
                 height: 325px;
                 object-fit: cover;
                 overflow: hidden;
                 border-radius: 10px;
+
+                @media (max-width: 600px) {
+                    width: 358px;
+                    height: 213px;
+                }
             }
         }
 
         .blog-text {
-            @include flex(column, center, null, nowrap, 40px);
+            @include flex(column, center, null, null, 40px);
 
             .head-and-about {
-                @include flex(column, null, null, nowrap, 20px);
+                @include flex(column, null, null, null, 20px);
+
                 h3 {
                     // @include flex(column, start, center, nowrap, 14px);
                     color: $white;
@@ -28,6 +42,10 @@
                     font-weight: 600;
                     line-height: 150%;
                     letter-spacing: -0.72px;
+
+                    @media (max-width: 600px) {
+                        font-size: 20px;
+                    }
                 }
 
                 p {
@@ -44,6 +62,7 @@
                 margin-bottom: 10px;
 
                 tr {
+
                     th {
                         color: $gray;
                         font-size: 16px;
@@ -51,6 +70,11 @@
                         font-weight: 400;
                         line-height: 150%;
                         letter-spacing: -0.48px;
+                        padding: 2px;
+
+                        @media (max-width: 600px) {
+                            font-size: 14px;
+                        }
                     }
 
                     td {
@@ -60,18 +84,23 @@
                         font-weight: 400;
                         line-height: 150%;
                         letter-spacing: -0.48px;
+                        padding: 2px;
+
+                        @media (max-width: 600px) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
 
             .blog-btns {
-                @include flex(row, space-between, center, nowrap, null);
+                @include flex(row, space-between, center, null, null);
 
                 .act-btns {
-                    @include flex(row, space-between, start, nowrap, 20px);
+                    @include flex(row, space-between, start, null, 20px);
 
                     .likes {
-                        @include flex(row, center, center, nowrap, 5px);
+                        @include flex(row, center, center, null, 5px);
                         background-color: $dark-gray;
                         padding: 5px 10px;
                         border-radius: 10px;
@@ -92,7 +121,7 @@
                     }
 
                     .sent {
-                        @include flex(row, center, center, nowrap, 5px);
+                        @include flex(row, center, center, null, 5px);
                         background-color: $dark-gray;
                         padding: 5px 10px;
                         border-radius: 10px;
@@ -110,16 +139,6 @@
                         i {
                             color: $gray;
                         }
-                    }
-                }
-
-                .read-more {
-                    button {
-                        padding: 18px 24px;
-                        border-radius: 8px;
-                        border: 1px solid $dark-gray;
-                        background-color: $black;
-                        color: $gray;
                     }
                 }
             }

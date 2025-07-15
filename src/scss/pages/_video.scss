@@ -1,19 +1,32 @@
 .video {
     .rowk {
-        @include flex(row, center, center, nowrap, 100px);
+        @include flex(row, center, center, null, 100px);
         padding: 60px;
         border-bottom: 1px solid $dark-gray;
+
+        @media (max-width: 600px) {
+            @include flex(column, center, center, null, 100px);
+        }
+
         .one-video {
-            @include flex(column, null, null, nowrap, 20px);
+            @include flex(column, null, null, null, 20px);
+
             .video-prew {
                 img {
                     width: 590px;
                     height: 331px;
+
+                    @media (max-width: 600px) {
+                        // @include flex(column, center, center, null, 100px);
+                        width: 358px;
+                        height: 210px;
+                    }
                 }
             }
 
             .video-desc {
-                @include flex(column, null, null, nowrap, 3px);
+                @include flex(column, null, null, null, 3px);
+
                 h3 {
                     color: $white;
                     font-size: 20px;

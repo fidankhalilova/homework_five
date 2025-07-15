@@ -4,8 +4,8 @@ nav {
     background-color: $light-black;
     padding: 20px 16px;
 
-    @media screen and (min-width: 400px) {
-        @include flex(row, space-between, center, nowrap, null);
+    @media screen and (max-width: 1200px) {
+        @include flex(row, space-between, center, null, null);
     }
 
     .logo {
@@ -21,10 +21,10 @@ nav {
 
     .navbar {
         display: block;
-        @include flex(row, center, center, nowrap, 40px);
+        @include flex(row, center, center, null, 40px);
 
         ul {
-            @include flex(row, center, center, nowrap, 40px);
+            @include flex(row, center, center, null, 40px);
 
             #default {
                 padding: 10px 18px;
@@ -43,7 +43,7 @@ nav {
         @include flex(row, space-between, center, null, null);
 
         .contact-us-btn {
-            @include flex(row, center, center, nowrap, 40px);
+            @include flex(row, center, center, null, 40px);
 
             button {
                 display: block;
@@ -68,10 +68,9 @@ nav {
 
         .hamburger {
             display: none;
-            border: 1px solid white;
 
             @media screen and (max-width: 1200px) {
-                @include flex(row, center, center, nowrap, 40px);
+                @include flex(row, center, center, null, 40px);
                 font-size: 28px;
                 align-self: stretch;
             }

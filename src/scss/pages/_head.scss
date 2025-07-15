@@ -4,10 +4,10 @@
     border-bottom: 1px solid $dark-gray;
 
     .head-content {
-        @include flex(column, null, null, nowrap, 16px);
+        @include flex(column, null, null, null, 16px);
 
         .first-head {
-            @include flex(row, start, center, nowrap, null);
+            @include flex(row, start, center, null, null);
 
             h1 {
                 color: $white;
@@ -17,11 +17,19 @@
                 font-weight: 500;
                 line-height: 130%;
                 letter-spacing: -1.65px;
+
+                @media (max-width: 600px) {
+                    font-size: 24px;
+                }
             }
         }
 
         .one-line {
-            @include flex(row, start, center, nowrap, 50px);
+            @include flex(row, start, null, null, 50px);
+
+            @media (max-width: 600px) {
+                @include flex(column, start, null, null, 50px);
+            }
 
             h1 {
                 color: $white;
@@ -31,6 +39,11 @@
                 font-weight: 500;
                 line-height: 130%;
                 letter-spacing: -1.65px;
+
+                @media (max-width: 600px) {
+                    font-size: 24px;
+                    @include flex(row, start, null, null, 50px);
+                }
             }
 
             p {

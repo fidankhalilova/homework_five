@@ -4,19 +4,27 @@
     border-bottom: 1px solid $dark-gray;
 
     .ad-place {
-        @include flex(column, null, null, nowrap, 50px);
+        @include flex(column, null, null, null, 50px);
+
         .first-sec {
-            @include flex(row, center, center, nowrap, 40px);
+            @include flex(row, center, center, null, 40px);
 
             .ad-logo {
                 img {
                     width: 120px;
                     height: 120px;
+
+                    @media (max-width: 600px) {
+                        width: 60px;
+                        height: 60px;
+                    }
                 }
             }
 
             .ad-info {
-                @include flex(column, null, null, nowrap, 18px);
+                @include flex(column, null, null, null, 18px);
+
+
 
                 #cat {
                     color: $white;
@@ -39,6 +47,10 @@
                     font-weight: 500;
                     line-height: 130%;
                     letter-spacing: -1.32px;
+
+                    @media (max-width: 600px) {
+                        font-size: 28px;
+                    }
                 }
 
                 #desc {
@@ -58,8 +70,12 @@
             border-radius: 10px;
             padding: 10px;
             border: 1px solid $light-black;
-            @include flex(row, center, null, nowrap, 10px);
+            @include flex(row, center, null, null, 10px);
             align-self: stretch;
+
+            @media (max-width: 600px) {
+                @include flex(column, null, null, wrap, 30px);
+            }
 
             .link-box {
                 padding: 30px;
@@ -67,10 +83,15 @@
                 background-color: $light-black;
                 border-radius: 10px;
                 border: 1px solid $dark-gray;
-                @include flex(column, null, flex-start, nowrap, 16px);
+                @include flex(column, null, flex-start, null, 16px);
 
                 .line-heading {
-                    @include flex(row, center, center, nowrap, 170px);
+                    @include flex(row, center, center, null, 170px);
+
+                    @media (max-width: 600px) {
+                        @include flex(row, null, null, wrap, 20px);
+                    }
+
                     h2 {
                         color: $white;
                         font-size: 18px;
