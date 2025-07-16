@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,7 +55,7 @@ table {
 }
 
 a {
-  color: gray;
+  color: #98989A;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -79,7 +79,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .sub-heading .sub-heading-place {
     display: flex;
     flex-direction: column;
@@ -136,7 +136,7 @@ a:hover {
   line-height: 130%;
   letter-spacing: -1.32px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .sub-heading .sub-heading-place .subH-text h1 {
     font-size: 28px;
   }
@@ -151,7 +151,7 @@ a:hover {
 .sub-heading .sub-heading-place .subH-btn button i {
   color: #FFD11A;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .sub-heading .sub-heading-place .subH-btn button {
     align-self: stretch;
   }
@@ -181,7 +181,7 @@ nav {
   background-color: #1A1A1A;
   padding: 20px 16px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -220,7 +220,7 @@ nav .navbar ul #default {
   background-color: #141414;
   border: 1px solid #98989A;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   nav .navbar {
     display: none;
   }
@@ -252,7 +252,7 @@ nav .right-content .contact-us-btn button:hover {
   background-color: #141414;
   color: white;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   nav .right-content .contact-us-btn button {
     display: none;
   }
@@ -260,7 +260,7 @@ nav .right-content .contact-us-btn button:hover {
 nav .right-content .hamburger {
   display: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   nav .right-content .hamburger {
     display: flex;
     flex-direction: row;
@@ -283,7 +283,7 @@ footer .footer-space .link-list {
   justify-content: space-between;
   align-self: stretch;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   footer .footer-space .link-list {
     display: flex;
     flex-direction: column;
@@ -306,7 +306,7 @@ footer .footer-space .link-list .one-list h4 {
   line-height: 130%;
   letter-spacing: -0.54px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   footer .footer-space .link-list .one-list #btn-h4 {
     margin-left: 5px;
   }
@@ -329,7 +329,7 @@ footer .footer-space .link-list .one-list ul #btn {
 footer .footer-space .link-list .one-list ul #btn i {
   color: #FFD11A;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   footer .footer-space .link-list .one-list #btn-list h4 {
     display: flex;
     flex-direction: row;
@@ -339,7 +339,7 @@ footer .footer-space .link-list .one-list ul #btn i {
     gap: 10px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   footer .footer-space .link-list .one-list #btn-list {
     display: flex;
     flex-direction: row;
@@ -355,7 +355,7 @@ footer .footer-space .bottom-part {
   border-top: 1px solid #262626;
   padding-top: 40px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   footer .footer-space .bottom-part {
     display: flex;
     flex-direction: column;
@@ -373,7 +373,7 @@ footer .footer-space .bottom-part #policy {
   line-height: 130%;
   letter-spacing: -0.42px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   footer .footer-space .bottom-part #policy {
     order: 2;
   }
@@ -389,7 +389,7 @@ footer .footer-space .bottom-part .socials i {
 footer .footer-space .bottom-part .socials i:hover {
   color: #FFD11A;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   footer .footer-space .bottom-part .socials {
     order: 1;
   }
@@ -402,7 +402,7 @@ footer .footer-space .bottom-part #rights {
   line-height: 130%;
   letter-spacing: -0.42px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   footer .footer-space .bottom-part #rights {
     order: 3;
   }
@@ -433,7 +433,7 @@ footer .footer-space .bottom-part #rights {
   line-height: 130%;
   letter-spacing: -1.65px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .head .head-content .first-head h1 {
     font-size: 24px;
   }
@@ -444,7 +444,7 @@ footer .footer-space .bottom-part #rights {
   justify-content: start;
   gap: 50px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .head .head-content .one-line {
     display: flex;
     flex-direction: column;
@@ -461,7 +461,7 @@ footer .footer-space .bottom-part #rights {
   line-height: 130%;
   letter-spacing: -1.65px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .head .head-content .one-line h1 {
     font-size: 24px;
     display: flex;
@@ -490,14 +490,14 @@ footer .footer-space .bottom-part #rights {
   align-items: center;
   gap: 60px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .blog-post .blog-place {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .blog-post .blog-place .blog-img {
     display: flex;
     flex-direction: row;
@@ -513,7 +513,7 @@ footer .footer-space .bottom-part #rights {
   overflow: hidden;
   border-radius: 10px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .blog-post .blog-place .blog-img img {
     width: 358px;
     height: 213px;
@@ -538,7 +538,7 @@ footer .footer-space .bottom-part #rights {
   line-height: 150%;
   letter-spacing: -0.72px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .blog-post .blog-place .blog-text .head-and-about h3 {
     font-size: 20px;
   }
@@ -563,7 +563,7 @@ footer .footer-space .bottom-part #rights {
   letter-spacing: -0.48px;
   padding: 2px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .blog-post .blog-place .blog-text table tr th {
     font-size: 14px;
   }
@@ -577,7 +577,7 @@ footer .footer-space .bottom-part #rights {
   letter-spacing: -0.48px;
   padding: 2px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .blog-post .blog-place .blog-text table tr td {
     font-size: 14px;
   }
@@ -651,7 +651,7 @@ footer .footer-space .bottom-part #rights {
   align-items: center;
   gap: 30px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .top-posts .post-row {
     display: flex;
     flex-direction: row;
@@ -776,7 +776,7 @@ footer .footer-space .bottom-part #rights {
   align-items: center;
   gap: 20px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .filters .filter-btns {
     display: flex;
     flex-direction: row;
@@ -813,7 +813,7 @@ footer .footer-space .bottom-part #rights {
   align-items: start;
   gap: 160px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .tweet .tweet-place {
     display: flex;
     flex-direction: column;
@@ -857,7 +857,7 @@ footer .footer-space .bottom-part #rights {
   align-items: center;
   gap: 120px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .tweet .tweet-place .post-details {
     display: flex;
     flex-direction: column;
@@ -968,7 +968,7 @@ footer .footer-space .bottom-part #rights {
 .tweet .tweet-place .post-details .post-preview .act-btns .sent i {
   color: #98989A;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .tweet .tweet-place .post-details .read-more {
     display: flex;
     flex-direction: column;
@@ -977,13 +977,6 @@ footer .footer-space .bottom-part #rights {
     flex-wrap: nowrap;
     gap: 30px;
   }
-}
-.tweet .tweet-place .post-details .read-more button {
-  padding: 18px 24px;
-  border-radius: 8px;
-  border: 1px solid #262626;
-  background-color: #141414;
-  color: #98989A;
 }
 .tweet .tweet-place .post-details .read-more button i {
   color: #FFD11A;
@@ -998,7 +991,7 @@ footer .footer-space .bottom-part #rights {
   padding: 60px;
   border-bottom: 1px solid #262626;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .video .rowk {
     display: flex;
     flex-direction: column;
@@ -1016,7 +1009,7 @@ footer .footer-space .bottom-part #rights {
   width: 590px;
   height: 331px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .video .rowk .one-video .video-prew img {
     width: 358px;
     height: 210px;
@@ -1065,7 +1058,7 @@ footer .footer-space .bottom-part #rights {
   width: 120px;
   height: 120px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .ad .ad-place .first-sec .ad-logo img {
     width: 60px;
     height: 60px;
@@ -1097,7 +1090,7 @@ footer .footer-space .bottom-part #rights {
   line-height: 130%;
   letter-spacing: -1.32px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .ad .ad-place .first-sec .ad-info h1 {
     font-size: 28px;
   }
@@ -1122,7 +1115,7 @@ footer .footer-space .bottom-part #rights {
   gap: 10px;
   align-self: stretch;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .ad .ad-place .other-links {
     display: flex;
     flex-direction: column;
@@ -1141,6 +1134,14 @@ footer .footer-space .bottom-part #rights {
   align-items: flex-start;
   gap: 16px;
 }
+@media (max-width: 900px) {
+  .ad .ad-place .other-links .link-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 .ad .ad-place .other-links .link-box .line-heading {
   display: flex;
   flex-direction: row;
@@ -1148,7 +1149,7 @@ footer .footer-space .bottom-part #rights {
   align-items: center;
   gap: 170px;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .ad .ad-place .other-links .link-box .line-heading {
     display: flex;
     flex-direction: row;

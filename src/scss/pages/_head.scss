@@ -1,53 +1,55 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 .head {
     padding: 70px 80px;
-    border-top: 1px solid $dark-gray;
-    border-bottom: 1px solid $dark-gray;
+    border-top: 1px solid map-get(v.$web-colors, dark-gray);
+    border-bottom: 1px solid map-get(v.$web-colors, dark-gray);
 
     .head-content {
-        @include flex(column, null, null, null, 16px);
+        @include m.flex(column, null, null, null, 16px);
 
         .first-head {
-            @include flex(row, start, center, null, null);
+            @include m.flex(row, start, center, null, null);
 
             h1 {
-                color: $white;
-                font-family: $head-font;
+                color: map-get(v.$web-colors, white-color);
+                font-family: v.$head-font;
                 font-size: 55px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 130%;
                 letter-spacing: -1.65px;
 
-                @media (max-width: 600px) {
+                @media (max-width: 900px) {
                     font-size: 24px;
                 }
             }
         }
 
         .one-line {
-            @include flex(row, start, null, null, 50px);
+            @include m.flex(row, start, null, null, 50px);
 
-            @media (max-width: 600px) {
-                @include flex(column, start, null, null, 50px);
+            @media (max-width: 900px) {
+                @include m.flex(column, start, null, null, 50px);
             }
 
             h1 {
-                color: $white;
-                font-family: $head-font;
+                color: map-get(v.$web-colors, white-color);
+                font-family: v.$head-font;
                 font-size: 55px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 130%;
                 letter-spacing: -1.65px;
 
-                @media (max-width: 600px) {
+                @media (max-width: 900px) {
                     font-size: 24px;
-                    @include flex(row, start, null, null, 50px);
+                    @include m.flex(row, start, null, null, 50px);
                 }
             }
 
             p {
-                color: $gray;
+                color: map-get(v.$web-colors, gray-color);
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;

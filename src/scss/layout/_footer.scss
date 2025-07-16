@@ -1,3 +1,5 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 footer {
     padding-top: 80px;
     padding-bottom: 30px;
@@ -6,18 +8,18 @@ footer {
 
         .link-list {
             padding-bottom: 30px;
-            @include flex(row, space-between, null, null, null);
+            @include m.flex(row, space-between, null, null, null);
             align-self: stretch;
 
-            @media (max-width: 600px) {
-                @include flex(column, center, center, wrap, 30px);
+            @media (max-width: 900px) {
+                @include m.flex(column, center, center, wrap, 30px);
             }
 
             .one-list {
-                @include flex(column, null, null, null, 10px);
+                @include m.flex(column, null, null, null, 10px);
 
                 h4 {
-                    color: $white;
+                    color: map-get(v.$web-colors, white-color);
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 500;
@@ -26,13 +28,13 @@ footer {
                 }
 
                 #btn-h4 {
-                    @media (max-width: 600px) {
+                    @media (max-width: 900px) {
                         margin-left: 5px;
                     }
                 }
 
                 ul {
-                    @include flex(column, null, null, null, 5px);
+                    @include m.flex(column, null, null, null, 5px);
 
                     li {
                         text-decoration: none;
@@ -41,77 +43,77 @@ footer {
                     #btn {
                         padding: 14px 16px;
                         border-radius: 8px;
-                        border: 1px solid $dark-gray;
-                        background-color: $black;
-                        color: $gray;
+                        border: 1px solid map-get(v.$web-colors, dark-gray);
+                        background-color: map-get(v.$web-colors, black-color);
+                        color: map-get(v.$web-colors, gray-color);
 
                         i {
-                            color: $yellow;
+                            color: map-get(v.$web-colors, yellow-color);
                         }
                     }
                 }
 
                 #btn-list {
                     h4 {
-                        @media (max-width: 600px) {
-                            @include flex(row, center, center, wrap, 10px);
+                        @media (max-width: 900px) {
+                            @include m.flex(row, center, center, wrap, 10px);
                         }
                     }
 
-                    @media (max-width: 600px) {
-                        @include flex(row, null, null, wrap, 10px);
+                    @media (max-width: 900px) {
+                        @include m.flex(row, null, null, wrap, 10px);
                     }
                 }
             }
         }
 
         .bottom-part {
-            @include flex(row, space-between, null, null, 5px);
-            border-top: 1px solid $dark-gray;
+            @include m.flex(row, space-between, null, null, 5px);
+            border-top: 1px solid map-get(v.$web-colors, dark-gray);
             padding-top: 40px;
 
-            @media (max-width: 600px) {
-                @include flex(column, center, center, wrap, 18px);
+            @media (max-width: 900px) {
+                @include m.flex(column, center, center, wrap, 18px);
             }
 
             #policy {
-                color: $gray;
+                color: map-get(v.$web-colors, gray-color);
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 130%;
                 letter-spacing: -0.42px;
 
-                @media (max-width: 600px) {
+                @media (max-width: 900px) {
                     order: 2;
                 }
             }
 
             .socials {
-                @include flex(row, null, null, null, 6px);
+                @include m.flex(row, null, null, null, 6px);
 
                 i {
                     font-size: 22px;
 
                     &:hover {
-                        color: $yellow;
+                        color: map-get(v.$web-colors, yellow-color);
                     }
                 }
 
-                @media (max-width: 600px) {
+                @media (max-width: 900px) {
                     order: 1;
                 }
             }
 
             #rights {
-                color: $gray;
+                color: map-get(v.$web-colors, gray-color);
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 130%;
                 letter-spacing: -0.42px;
 
-                @media (max-width: 600px) {
+                @media (max-width: 900px) {
                     order: 3;
                 }
             }

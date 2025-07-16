@@ -1,20 +1,22 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 .ad {
-    background-color: $light-black;
+    background-color: map-get(v.$web-colors, light-black);
     padding: 80px;
-    border-bottom: 1px solid $dark-gray;
+    border-bottom: 1px solid map-get(v.$web-colors, dark-gray);
 
     .ad-place {
-        @include flex(column, null, null, null, 50px);
+        @include m.flex(column, null, null, null, 50px);
 
         .first-sec {
-            @include flex(row, center, center, null, 40px);
+            @include m.flex(row, center, center, null, 40px);
 
             .ad-logo {
                 img {
                     width: 120px;
                     height: 120px;
 
-                    @media (max-width: 600px) {
+                    @media (max-width: 900px) {
                         width: 60px;
                         height: 60px;
                     }
@@ -22,39 +24,39 @@
             }
 
             .ad-info {
-                @include flex(column, null, null, null, 18px);
+                @include m.flex(column, null, null, null, 18px);
 
 
 
                 #cat {
-                    color: $white;
+                    color: map-get(v.$web-colors, white-color);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 150%;
                     letter-spacing: -0.48px;
-                    background-color: $dark-gray;
+                    background-color: map-get(v.$web-colors, dark-gray);
                     padding: 2px;
                     width: 220px;
                     text-align: center;
                 }
 
                 h1 {
-                    color: $white;
-                    font-family: $head-font;
+                    color: map-get(v.$web-colors, white-color);
+                    font-family: v.$head-font;
                     font-size: 44px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 130%;
                     letter-spacing: -1.32px;
 
-                    @media (max-width: 600px) {
+                    @media (max-width: 900px) {
                         font-size: 28px;
                     }
                 }
 
                 #desc {
-                    color: $gray;
+                    color: map-get(v.$web-colors, gray-color);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
@@ -65,35 +67,39 @@
         }
 
         .other-links {
-            background-color: $black;
-            border: 1px solid $dark-gray;
+            background-color: map-get(v.$web-colors, black-color);
+            border: 1px solid map-get(v.$web-colors, dark-gray);
             border-radius: 10px;
             padding: 10px;
-            border: 1px solid $light-black;
-            @include flex(row, center, null, null, 10px);
+            border: 1px solid map-get(v.$web-colors, light-black);
+            @include m.flex(row, center, null, null, 10px);
             align-self: stretch;
 
-            @media (max-width: 600px) {
-                @include flex(column, null, null, wrap, 30px);
+            @media (max-width: 900px) {
+                @include m.flex(column, null, null, wrap, 30px);
             }
 
             .link-box {
                 padding: 30px;
                 flex: 1 0 0;
-                background-color: $light-black;
+                background-color: map-get(v.$web-colors, light-black);
                 border-radius: 10px;
-                border: 1px solid $dark-gray;
-                @include flex(column, null, flex-start, null, 16px);
+                border: 1px solid map-get(v.$web-colors, dark-gray);
+                @include m.flex(column, null, flex-start, null, 16px);
+
+                @media (max-width: 900px) {
+                    @include m.flex(row, null, null, wrap, 20px);
+                }
 
                 .line-heading {
-                    @include flex(row, center, center, null, 170px);
+                    @include m.flex(row, center, center, null, 170px);
 
-                    @media (max-width: 600px) {
-                        @include flex(row, null, null, wrap, 20px);
+                    @media (max-width: 900px) {
+                        @include m.flex(row, null, null, wrap, 20px);
                     }
 
                     h2 {
-                        color: $white;
+                        color: map-get(v.$web-colors, white-color);
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 600;
@@ -104,7 +110,7 @@
                     button {
                         border: none;
                         border-radius: 50%;
-                        background-color: $yellow;
+                        background-color: map-get(v.$web-colors, yellow-color);
                         height: 40px;
                         width: 40px;
 
@@ -115,7 +121,7 @@
                 }
 
                 p {
-                    color: $gray;
+                    color: map-get(v.$web-colors, gray-color);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;

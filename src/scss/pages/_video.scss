@@ -1,22 +1,24 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 .video {
     .rowk {
-        @include flex(row, center, center, null, 100px);
+        @include m.flex(row, center, center, null, 100px);
         padding: 60px;
-        border-bottom: 1px solid $dark-gray;
+        border-bottom: 1px solid map-get(v.$web-colors, dark-gray);
 
-        @media (max-width: 600px) {
-            @include flex(column, center, center, null, 100px);
+        @media (max-width: 900px) {
+            @include m.flex(column, center, center, null, 100px);
         }
 
         .one-video {
-            @include flex(column, null, null, null, 20px);
+            @include m.flex(column, null, null, null, 20px);
 
             .video-prew {
                 img {
                     width: 590px;
                     height: 331px;
 
-                    @media (max-width: 600px) {
+                    @media (max-width: 900px) {
                         // @include flex(column, center, center, null, 100px);
                         width: 358px;
                         height: 210px;
@@ -25,10 +27,10 @@
             }
 
             .video-desc {
-                @include flex(column, null, null, null, 3px);
+                @include m.flex(column, null, null, null, 3px);
 
                 h3 {
-                    color: $white;
+                    color: map-get(v.$web-colors, white-color);
                     font-size: 20px;
                     font-style: normal;
                     font-weight: 600;
@@ -37,7 +39,7 @@
                 }
 
                 p {
-                    color: $gray;
+                    color: map-get(v.$web-colors, gray-color);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;

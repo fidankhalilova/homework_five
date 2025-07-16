@@ -1,9 +1,10 @@
+@use "../vendors/variables" as v;
 .read-more {
     button {
         padding: 18px 24px;
         border-radius: 8px;
-        border: 1px solid $dark-gray;
-        background-color: $black;
-        color: $gray;
+        border: 1px solid map-get(v.$web-colors, dark-gray);
+        background-color: map-get(v.$web-colors, black-color);
+        color: map-get(v.$web-colors, gray-color);
     }
 }

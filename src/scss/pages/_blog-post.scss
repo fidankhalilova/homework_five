@@ -1,17 +1,19 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 .blog-post {
     padding: 60px 80px;
-    border-bottom: 1px solid $dark-gray;
+    border-bottom: 1px solid map-get(v.$web-colors, dark-gray);
 
     .blog-place {
-        @include flex(row, center, center, null, 60px);
+        @include m.flex(row, center, center, null, 60px);
 
-        @media (max-width: 600px) {
-            @include flex(column, null, null, null, 30px);
+        @media (max-width: 900px) {
+            @include m.flex(column, null, null, null, 30px);
         }
 
         .blog-img {
-            @media (max-width: 600px) {
-                @include flex(row, start, null, null, 30px);
+            @media (max-width: 900px) {
+                @include m.flex(row, start, null, null, 30px);
             }
 
             img {
@@ -21,7 +23,7 @@
                 overflow: hidden;
                 border-radius: 10px;
 
-                @media (max-width: 600px) {
+                @media (max-width: 900px) {
                     width: 358px;
                     height: 213px;
                 }
@@ -29,27 +31,27 @@
         }
 
         .blog-text {
-            @include flex(column, center, null, null, 40px);
+            @include m.flex(column, center, null, null, 40px);
 
             .head-and-about {
-                @include flex(column, null, null, null, 20px);
+                @include m.flex(column, null, null, null, 20px);
 
                 h3 {
                     // @include flex(column, start, center, nowrap, 14px);
-                    color: $white;
+                    color: map-get(v.$web-colors, white-color);
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 150%;
                     letter-spacing: -0.72px;
 
-                    @media (max-width: 600px) {
+                    @media (max-width: 900px) {
                         font-size: 20px;
                     }
                 }
 
                 p {
-                    color: $gray;
+                    color: map-get(v.$web-colors, gray-color);
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 400;
@@ -64,7 +66,7 @@
                 tr {
 
                     th {
-                        color: $gray;
+                        color: map-get(v.$web-colors, gray-color);
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -72,13 +74,13 @@
                         letter-spacing: -0.48px;
                         padding: 2px;
 
-                        @media (max-width: 600px) {
+                        @media (max-width: 900px) {
                             font-size: 14px;
                         }
                     }
 
                     td {
-                        color: $white;
+                        color: map-get(v.$web-colors, white-color);
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -86,7 +88,7 @@
                         letter-spacing: -0.48px;
                         padding: 2px;
 
-                        @media (max-width: 600px) {
+                        @media (max-width: 900px) {
                             font-size: 14px;
                         }
                     }
@@ -94,21 +96,21 @@
             }
 
             .blog-btns {
-                @include flex(row, space-between, center, null, null);
+                @include m.flex(row, space-between, center, null, null);
 
                 .act-btns {
-                    @include flex(row, space-between, start, null, 20px);
+                    @include m.flex(row, space-between, start, null, 20px);
 
                     .likes {
-                        @include flex(row, center, center, null, 5px);
-                        background-color: $dark-gray;
+                        @include m.flex(row, center, center, null, 5px);
+                        background-color: map-get(v.$web-colors, dark-gray);
                         padding: 5px 10px;
                         border-radius: 10px;
 
                         p {
-                            color: $gray;
-                            font-family: $head-font;
-                            font-size: $font-xs;
+                            color: map-get(v.$web-colors, gray-color);
+                            font-family: v.$head-font;
+                            font-size: v.$font-xs;
                             font-style: normal;
                             font-weight: 400;
                             line-height: 150%;
@@ -116,20 +118,20 @@
                         }
 
                         i {
-                            color: $gray;
+                            color: map-get(v.$web-colors, gray-color);
                         }
                     }
 
                     .sent {
-                        @include flex(row, center, center, null, 5px);
-                        background-color: $dark-gray;
+                        @include m.flex(row, center, center, null, 5px);
+                        background-color: map-get(v.$web-colors, dark-gray);
                         padding: 5px 10px;
                         border-radius: 10px;
 
                         p {
-                            color: $gray;
-                            font-family: $head-font;
-                            font-size: $font-xs;
+                            color: map-get(v.$web-colors, gray-color);
+                            font-family: v.$head-font;
+                            font-size: v.$font-xs;
                             font-style: normal;
                             font-weight: 400;
                             line-height: 150%;
@@ -137,7 +139,7 @@
                         }
 
                         i {
-                            color: $gray;
+                            color: map-get(v.$web-colors, gray-color);
                         }
                     }
                 }

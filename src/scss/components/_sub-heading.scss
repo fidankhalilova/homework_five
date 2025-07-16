@@ -1,32 +1,34 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 .sub-heading {
     padding: 80px;
-    border-bottom: 1px solid $dark-gray;
-    background-color: $light-black;
+    border-bottom: 1px solid map-get(v.$web-colors, dark-gray);
+    background-color: map-get(v.$web-colors, light-black);
 
     .sub-heading-place {
-        @include flex(row, space-between, center, null, null);
+        @include m.flex(row, space-between, center, null, null);
 
-        @media (max-width: 600px) {
-            @include flex(column, center, null, null, 50px);
+        @media (max-width: 900px) {
+            @include m.flex(column, center, null, null, 50px);
         }
 
         .subH-text {
-            @include flex(column, start, null, null, 20px);
+            @include m.flex(column, start, null, null, 20px);
 
             .sub-cat-one {
                 width: 226px;
-                background-color: $dark-gray;
+                background-color: map-get(v.$web-colors, dark-gray);
                 padding: 4px 8px;
                 border-radius: 4px;
 
                 p {
-                    color: $white;
+                    color: map-get(v.$web-colors, white-color);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 150%;
                     letter-spacing: -0.48px;
-                    background-color: $dark-gray;
+                    background-color: map-get(v.$web-colors, dark-gray);
                     padding: 4px 8px;
                     border-radius: 4px;
                 }
@@ -34,33 +36,33 @@
 
             .sub-cat-two {
                 width: 150px;
-                background-color: $dark-gray;
+                background-color: map-get(v.$web-colors, dark-gray);
                 padding: 4px 8px;
                 border-radius: 4px;
 
                 p {
-                    color: $white;
+                    color: map-get(v.$web-colors, white-color);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 150%;
                     letter-spacing: -0.48px;
-                    background-color: $dark-gray;
+                    background-color: map-get(v.$web-colors, dark-gray);
                     padding: 4px 8px;
                     border-radius: 4px;
                 }
             }
 
             h1 {
-                color: $white;
-                font-family: $head-font;
+                color: map-get(v.$web-colors, white-color);
+                font-family: v.$head-font;
                 font-size: 44px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 130%;
                 letter-spacing: -1.32px;
 
-                @media (max-width: 600px) {
+                @media (max-width: 900px) {
                     font-size: 28px;
                 }
             }
@@ -70,15 +72,15 @@
             button {
                 padding: 18px 24px;
                 border-radius: 8px;
-                border: 1px solid $dark-gray;
-                background-color: $black;
-                color: $white;
+                border: 1px solid map-get(v.$web-colors, dark-gray);
+                background-color: map-get(v.$web-colors, black-color);
+                color: map-get(v.$web-colors, white-color);
 
                 i {
-                    color: $yellow;
+                    color: map-get(v.$web-colors, yellow-color);
                 }
 
-                @media (max-width: 600px) {
+                @media (max-width: 900px) {
                     align-self: stretch;
                 }
             }

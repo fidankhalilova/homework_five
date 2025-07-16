@@ -1,31 +1,33 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 .filters {
-    @include flex(row, space-between, center, nowrap, null);
+    @include m.flex(row, space-between, center, nowrap, null);
     padding: 50px 80px;
-    border-bottom: 1px solid $dark-gray;
+    border-bottom: 1px solid map-get(v.$web-colors, dark-gray);
 
     .filter-btns {
-        @include flex(row, center, center, null, 20px);
+        @include m.flex(row, center, center, null, 20px);
 
-        @media (max-width: 600px) {
-            @include flex(row, center, center, wrap, 30px);
+        @media (max-width: 900px) {
+            @include m.flex(row, center, center, wrap, 30px);
         }
 
         .btn {
             flex: 1 0 0;
-            border: 1px solid $dark-gray;
-            background-color: $light-black;
+            border: 1px solid map-get(v.$web-colors, dark-gray);
+            background-color: map-get(v.$web-colors, light-black);
             padding: 24px 30px;
             border-radius: 8px;
-            color: $gray;
+            color: map-get(v.$web-colors, gray-color);
 
             &:hover {
-                background-color: $dark-gray;
+                background-color: map-get(v.$web-colors, dark-gray);
             }
         }
 
         #active-btn {
-            background-color: $dark-gray;
-            color: $white;
+            background-color: map-get(v.$web-colors, dark-gray);
+            color: map-get(v.$web-colors, white-color);
         }
     }
 }

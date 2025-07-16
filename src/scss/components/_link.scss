@@ -1,15 +1,16 @@
+@use "../vendors/variables" as v;
 a {
-    color: gray;
+    color: map-get(v.$web-colors, gray-color);
     text-decoration: none;
-    font-family: $base-font;
-    font-size: $font-sm;
+    font-family: v.$base-font;
+    font-size: v.$font-sm;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
 
 
     &:hover {
-        border-color: $gray;
-        color: $yellow;
+        border-color: map-get(v.$web-colors, gray-color);
+        color: map-get(v.$web-colors, yellow-color);
     }
 }

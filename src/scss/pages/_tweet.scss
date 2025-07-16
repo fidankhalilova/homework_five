@@ -1,17 +1,19 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 .tweet {
     padding: 60px 80px;
-    border-bottom: 1px solid $dark-gray;
+    border-bottom: 1px solid map-get(v.$web-colors, dark-gray);
 
     .tweet-place {
-        @include flex(row, center, start, null, 160px);
+        @include m.flex(row, center, start, null, 160px);
 
-        @media (max-width: 600px) {
-            @include flex(column, null, null, wrap, 30px);
+        @media (max-width: 900px) {
+            @include m.flex(column, null, null, wrap, 30px);
         }
 
 
         .pic-name {
-            @include flex(row, null, center, nowrap, 10px);
+            @include m.flex(row, null, center, nowrap, 10px);
 
             .profile-pic {
 
@@ -25,7 +27,7 @@
 
             .acc-name {
                 h4 {
-                    color: $white;
+                    color: map-get(v.$web-colors, white-color);
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 600;
@@ -34,7 +36,7 @@
                 }
 
                 p {
-                    color: $gray;
+                    color: map-get(v.$web-colors, gray-color);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
@@ -45,17 +47,17 @@
         }
 
         .post-details {
-            @include flex(row, space-between, center, null, 120px);
+            @include m.flex(row, space-between, center, null, 120px);
 
-            @media (max-width: 600px) {
-                @include flex(column, start, start, nowrap, 30px);
+            @media (max-width: 900px) {
+                @include m.flex(column, start, start, nowrap, 30px);
             }
 
             .post-preview {
-                @include flex(column, null, null, null, 20px);
+                @include m.flex(column, null, null, null, 20px);
 
                 #date {
-                    color: $gray;
+                    color: map-get(v.$web-colors, gray-color);
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 600;
@@ -64,7 +66,7 @@
                 }
 
                 h3 {
-                    color: $white;
+                    color: map-get(v.$web-colors, white-color);
                     font-size: 22px;
                     font-style: normal;
                     font-weight: 600;
@@ -73,7 +75,7 @@
                 }
 
                 #preview {
-                    color: $gray;
+                    color: map-get(v.$web-colors, gray-color);
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
@@ -82,18 +84,18 @@
                 }
 
                 .act-btns {
-                    @include flex(row, null, start, null, 20px);
+                    @include m.flex(row, null, start, null, 20px);
 
                     .likes {
-                        @include flex(row, center, center, null, 5px);
-                        background-color: $light-black;
+                        @include m.flex(row, center, center, null, 5px);
+                        background-color: map-get(v.$web-colors, light-black);
                         padding: 5px 10px;
                         border-radius: 10px;
 
                         p {
-                            color: $gray;
-                            font-family: $head-font;
-                            font-size: $font-xs;
+                            color: map-get(v.$web-colors, gray-color);
+                            font-family: v.$head-font;
+                            font-size: v.$font-xs;
                             font-style: normal;
                             font-weight: 400;
                             line-height: 150%;
@@ -101,20 +103,20 @@
                         }
 
                         i {
-                            color: $gray;
+                            color: map-get(v.$web-colors, gray-color);
                         }
                     }
 
                     .chat {
-                        @include flex(row, center, center, null, 5px);
-                        background-color: $light-black;
+                        @include m.flex(row, center, center, null, 5px);
+                        background-color: map-get(v.$web-colors, light-black);
                         padding: 5px 10px;
                         border-radius: 10px;
 
                         p {
-                            color: $gray;
-                            font-family: $head-font;
-                            font-size: $font-xs;
+                            color: map-get(v.$web-colors, gray-color);
+                            font-family: v.$head-font;
+                            font-size: v.$font-xs;
                             font-style: normal;
                             font-weight: 400;
                             line-height: 150%;
@@ -122,20 +124,20 @@
                         }
 
                         i {
-                            color: $gray;
+                            color: map-get(v.$web-colors, gray-color);
                         }
                     }
 
                     .sent {
-                        @include flex(row, center, center, null, 5px);
-                        background-color: $light-black;
+                        @include m.flex(row, center, center, null, 5px);
+                        background-color: map-get(v.$web-colors, light-black);
                         padding: 5px 10px;
                         border-radius: 10px;
 
                         p {
-                            color: $gray;
-                            font-family: $head-font;
-                            font-size: $font-xs;
+                            color: map-get(v.$web-colors, gray-color);
+                            font-family: v.$head-font;
+                            font-size: v.$font-xs;
                             font-style: normal;
                             font-weight: 400;
                             line-height: 150%;
@@ -143,7 +145,7 @@
                         }
 
                         i {
-                            color: $gray;
+                            color: map-get(v.$web-colors, gray-color);
                         }
                     }
                 }
@@ -151,19 +153,13 @@
             }
 
             .read-more {
-                @media (max-width: 600px) {
-                    @include flex(column, start, start, nowrap, 30px);
+                @media (max-width: 900px) {
+                    @include m.flex(column, start, start, nowrap, 30px);
                 }
 
                 button {
-                    padding: 18px 24px;
-                    border-radius: 8px;
-                    border: 1px solid $dark-gray;
-                    background-color: $black;
-                    color: $gray;
-
                     i {
-                        color: $yellow;
+                        color: map-get(v.$web-colors, yellow-color);
                     }
                 }
             }
