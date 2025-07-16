@@ -1,1 +1,69 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
 
+nav {
+    border-bottom: 1px solid map-get(v.$colors, gray-color);
+    padding: 6px;
+
+    .navbar {
+        @include m.flex(row, null, null, null, null);
+
+        h1 {
+            color: map-get(v.$colors, purple-color);
+            font-family: v.$head-font;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        ul {
+            @include m.flex(row, null, null, null, 40px);
+
+            li {
+                text-decoration: none;
+            }
+        }
+
+        .action-btns {
+            @include m.flex(row, end, null, null, 20px);
+            // border: 1px solid white;
+
+            .search-bar {
+                @include m.flex(row, space-between, center, null, 20px);
+                border-radius: 100px;
+                border: 2px solid map-get(v.$colors, gray-color);
+                background: map-get(v.$colors, white-color);
+                width: 300px;
+                padding: 10px;
+
+                input {
+                    margin-left: 10px;
+                    border: none;
+
+                    &::placeholder {
+                        font-family: v.$base-font;
+                        color: map-get(v.$colors, gray-color);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.64px;
+                    }
+                }
+
+                i {
+                    margin-right: 10px;
+                    font-size: 24px;
+                }
+            }
+
+            .btn {
+                padding: 16px 20px;
+                background: map-get(v.$colors, purple-color);
+                border-radius: 60px;
+            }
+        }
+    }
+}

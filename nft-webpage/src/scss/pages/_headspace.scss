@@ -1,0 +1,177 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
+
+.first {
+    padding: 60px 80px;
+
+    .headspace {
+        .heading {
+            @include m.flex(column, null, null, null, 30px);
+
+            h1 {
+                font-family: v.$head-font;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2px;
+            }
+
+            p {
+                color: map-get(v.$colors, gray-color);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%;
+            }
+
+            .explore {
+                padding: 20px 40px;
+                width: 210px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .stats {
+                @include m.flex(row, null, null, null, 30px);
+
+                .stat {
+                    @include m.flex(column, null, null, null, null);
+                    h1 {
+                        font-family: v.$sec-head-font;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+
+        .artwork {
+            @include m.flex(row, null, center, null, 20px);
+
+            .active-art {
+                position: relative;
+
+                .art-one {
+                    object-fit: cover;
+                    z-index: 3;
+
+                    img {
+                        width: 400px;
+                        height: 440px;
+                    }
+                }
+
+                .over-art {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 26px;
+                    @include m.flex(column, space-between, null, null, 24px);
+                    height: 440px;
+                    width: 400px;
+
+                    .first-part {
+                        @include m.flex(column, null, null, null, 20px);
+
+                        h1 {
+                            color: #FFF;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: -1.4px;
+                        }
+
+                        .a-line {
+                            @include m.flex(row, null, center, null, 16px);
+
+                            p {
+                                color: #FFF;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    .blur-bg {
+                        @include m.flex(row, null, null, null, 30px);
+                        border-radius: 12px;
+                        background: rgba(255, 255, 255, 0.20);
+                        backdrop-filter: blur(25px);
+                        padding: 18px 40px;
+
+                        .current-bid {
+                            @include m.flex(column, null, null, null, 10px);
+
+                            #cat {
+                                color: #FFF;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                            #out {
+                                color: #FFF;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                        }
+
+                        .ends-in {
+                            @include m.flex(column, null, null, null, 10px);
+
+                            #cat {
+                                color: #FFF;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                            #out {
+                                color: #FFF;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .art-two {
+                position: relative;
+                object-fit: cover;
+                z-index: -1;
+                top: 0;
+                left: -340px;
+
+                img {
+                    width: 356px;
+                    height: 392px;
+                }
+            }
+
+            .art-three {
+                position: relative;
+                object-fit: cover;
+                z-index: -2;
+                top: 0;
+                left: -640px;
+
+                img {
+                    width: 310px;
+                    height: 341px;
+                }
+            }
+        }
+    }
+}

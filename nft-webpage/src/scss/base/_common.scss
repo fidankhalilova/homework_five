@@ -1,0 +1,8 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
+
+body {
+    background-color: map-get(v.$colors, white-color);
+    color: map-get(v.$colors, black-color);
+    font-family: v.$base-font;
+}

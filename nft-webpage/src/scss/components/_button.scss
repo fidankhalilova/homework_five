@@ -1,0 +1,34 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
+
+.inside-fill {
+    @include m.flex(row, null, center, null, null);
+    padding: 16px 20px;
+    border-radius: 60px;
+    background: map-get(v.$colors, purple-color);
+    color: map-get(v.$colors, white-color);
+    border: 2px solid map-get(v.$colors, purple-color);
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        background: map-get(v.$colors, white-color);
+        color: map-get(v.$colors, purple-color);
+    }
+}
+
+.inside-none {
+    @include m.flex(row, null, center, null, null);
+    padding: 16px 20px;
+    border-radius: 60px;
+    background: map-get(v.$colors, white-color);
+    color: map-get(v.$colors, purple-color);
+    border: 2px solid map-get(v.$colors, purple-color);
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        background: map-get(v.$colors, purple-color);
+        color: map-get(v.$colors, white-color);
+    }
+}

@@ -2,7 +2,12 @@
 @forward "../scss/vendors/variables";
 @forward "../scss/vendors/mixin";
 @forward "../scss/vendors/extend";
+@forward "../scss/components/link";
+@forward "../scss/components/button";
 @forward "../scss/base/common";
+@forward "../scss/layout/navbar";
+@forward "../scss/pages/headspace";
+@forward "../scss/pages/services";
+@forward "../scss/pages/trends";
 
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap');

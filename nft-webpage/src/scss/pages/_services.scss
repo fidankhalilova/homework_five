@@ -1,0 +1,64 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
+
+.second {
+    background: rgba(217, 224, 236, 0.20);
+    backdrop-filter: blur(25px);
+    padding: 60px 80px;
+    @include m.flex(null, null, center, null, null);
+
+    .services {
+        @include m.flex(row, space-between, center, null, null);
+
+        .amazing-nft {
+            h1 {
+                color: #000;
+                font-family: v.$head-font;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+                letter-spacing: 0.6px;
+            }
+        }
+
+        .even-heads {
+            @include m.flex(null, null, start, null, 120px);
+            .first-service {
+                @include m.flex(row, null, start, null, 10px);
+
+                .one-line {
+                    @include m.flex(row, center, center, null, 10px);
+
+                    i {
+                        font-size: 30px;
+                    }
+
+                }
+
+                .two-line {
+                    @include m.flex(column, null, null, null, 16px);
+
+                    h3 {
+                        color: #000;
+                        font-family: "DM Sans";
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    p {
+                        color: #696969;
+                        font-family: "DM Sans";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 160%;
+                    }
+                }
+            }
+        }
+    }
+}

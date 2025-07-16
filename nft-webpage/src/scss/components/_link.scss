@@ -1,0 +1,17 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
+
+a {
+    text-decoration: none;
+    color: map-get(v.$colors, black-color);
+    font-family: v.$base-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+
+    &:hover {
+        color: map-get(v.$colors, purple-color);
+    }
+}
