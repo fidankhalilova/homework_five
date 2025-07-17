@@ -200,7 +200,6 @@ nav .logo img {
      object-fit: cover;
 }
 nav .navbar {
-  display: block;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -225,21 +224,14 @@ nav .navbar ul #default {
     display: none;
   }
 }
-nav .right-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-nav .right-content .contact-us-btn {
+nav .contact-us-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
-nav .right-content .contact-us-btn button {
-  display: block;
+nav .contact-us-btn button {
   padding: 20px 25px;
   background-color: #FFD11A;
   color: #141414;
@@ -248,27 +240,22 @@ nav .right-content .contact-us-btn button {
   border-radius: 10px;
   font-size: large;
 }
-nav .right-content .contact-us-btn button:hover {
+nav .contact-us-btn button:hover {
   background-color: #141414;
   color: white;
 }
 @media screen and (max-width: 900px) {
-  nav .right-content .contact-us-btn button {
+  nav .contact-us-btn button {
     display: none;
   }
 }
-nav .right-content .hamburger {
+nav .hamburger {
   display: none;
 }
-@media screen and (max-width: 900px) {
-  nav .right-content .hamburger {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+@media (max-width: 900px) {
+  nav .hamburger {
+    display: inline;
     font-size: 28px;
-    align-self: stretch;
   }
 }
 

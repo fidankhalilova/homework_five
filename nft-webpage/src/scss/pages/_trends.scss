@@ -7,6 +7,10 @@
     .trends {
         @include m.flex(row, space-between, center, null, null);
 
+        @media (max-width: 900px) {
+            @include m.flex(column, start, center, null, 40px);
+        }
+
         .first-col {
             @include m.flex(column, null, null, null, 20px);
 
@@ -34,7 +38,7 @@
                         @include m.flex(column, null, null, null, 5px);
 
                         h2 {
-                            color: #000;
+                            color: map-get(v.$colors, black-color);
                             font-family: "DM Sans";
                             font-size: 20px;
                             font-style: normal;
@@ -83,6 +87,10 @@
             .one-post {
                 @include m.flex(row, null, null, null, 20px);
 
+                @media (max-width: 900px) {
+                    @include m.flex(row, center, center, null, 30px);
+                }
+
                 .post-preview {
                     img {
                         width: 147px;
@@ -95,7 +103,8 @@
 
                     .post-name {
                         h1 {
-                            color: #000;
+                            color: map-get(v.$colors, black-color);
+                            ;
                             font-family: "DM Sans";
                             font-size: 20px;
                             font-style: normal;
@@ -144,11 +153,12 @@
 
         .third-col {
             @include m.flex(column, null, null, null, 40px);
-            border-left: 1px solid rgba(190, 190, 190, 0.64);
+            border-left: 1px solid rgba(222, 222, 222, 0.64);
 
             .trend-head {
                 padding: 10px 20px;
                 margin-left: 10px;
+
                 h4 {
                     color: #000;
                     font-family: v.$head-font;
@@ -161,7 +171,7 @@
                 }
 
                 p {
-                    color: #3D00B7;
+                    color: map-get(v.$colors, purple-color);
                     font-family: "DM Sans";
                     font-size: 18px;
                     font-style: normal;
@@ -173,14 +183,15 @@
             .trend-ranking {
                 @include m.flex(column, null, null, null, 0px);
                 padding: 10px 15px;
+
                 .ranking {
-                    @include m.flex(row, center, center, null, 16px);
-                    border-bottom: 1px solid rgba(190, 190, 190, 0.64);
+                    @include m.flex(row, space-between, center, null, 18px);
+                    border-bottom: 1px solid rgba(222, 222, 222, 0.64);
                     padding: 10px 15px;
 
                     .number {
                         h3 {
-                            color: #000;
+                            color: map-get(v.$colors, black-color);
                             text-align: center;
                             font-family: "DM Sans";
                             font-size: 24px;
@@ -194,15 +205,17 @@
 
                     .pic-prof {
                         position: relative;
-                            img {
-                                width: 60px;
-                                height: 60px;
-                            }
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
 
                         .vertified {
-                            position:absolute;
+                            position: absolute;
                             top: -6px; //-68px;
                             right: -10px; // -38px;
+
                             img {
                                 width: 32px;
                                 height: 32px;
@@ -212,8 +225,9 @@
 
                     .name-prof {
                         @include m.flex(column, null, null, null, 3px);
+
                         h1 {
-                            color: #000;
+                            color: map-get(v.$colors, black-color);
                             font-family: "DM Sans";
                             font-size: 16px;
                             font-style: normal;
@@ -225,7 +239,7 @@
 
                         p {
                             color: #636363;
-                            font-family: Poppins;
+                            font-family: "DM Sans";
                             font-size: 14px;
                             font-style: normal;
                             font-weight: 600;
@@ -235,11 +249,23 @@
                         }
                     }
 
-                    .value {
+                    .green-value {
                         h1 {
-                            color: #14C8B0;
+                            color: map-get(v.$colors, green-color);
                             text-align: right;
-                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 103%;
+                            /* 20.6px */
+                            letter-spacing: -0.5px;
+                        }
+                    }
+
+                    .red-value {
+                        h1 {
+                            color: map-get(v.$colors, red-color);
+                            text-align: right;
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 600;
@@ -249,6 +275,7 @@
                         }
                     }
                 }
+
                 .no-bottom {
                     border-bottom: none;
                 }

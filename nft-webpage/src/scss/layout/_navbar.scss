@@ -21,14 +21,21 @@ nav {
         ul {
             @include m.flex(row, null, null, null, 40px);
 
+            @media (max-width: 900px) {
+                display: none;
+            }
+
             li {
                 text-decoration: none;
             }
         }
 
         .action-btns {
-            @include m.flex(row, end, null, null, 20px);
-            // border: 1px solid white;
+            @include m.flex(row, end, center, null, 20px);
+
+            @media (max-width: 900px) {
+                display: none;
+            }
 
             .search-bar {
                 @include m.flex(row, space-between, center, null, 20px);
@@ -58,11 +65,14 @@ nav {
                     font-size: 24px;
                 }
             }
+        }
 
-            .btn {
-                padding: 16px 20px;
-                background: map-get(v.$colors, purple-color);
-                border-radius: 60px;
+        .hamburger {
+            display: none;
+
+            @media (max-width: 900px) {
+                display: inline-flex;
+                font-size: 28px;
             }
         }
     }

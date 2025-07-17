@@ -1,5 +1,6 @@
 @use "../vendors/variables" as v;
 @use "../vendors/mixin" as m;
+
 nav {
     @include m.flex(row, space-between, center, null, 120px);
     align-self: stretch;
@@ -22,7 +23,7 @@ nav {
     }
 
     .navbar {
-        display: block;
+        // display: block;
         @include m.flex(row, center, center, null, 40px);
 
         ul {
@@ -41,14 +42,14 @@ nav {
         }
     }
 
-    .right-content {
-        @include m.flex(row, space-between, center, null, null);
+    // .right-content {
+    //     @include m.flex(row, space-between, center, null, null);
 
         .contact-us-btn {
             @include m.flex(row, center, center, null, 40px);
 
             button {
-                display: block;
+                // display: block;
                 padding: 20px 25px;
                 background-color: map-get(v.$web-colors, yellow-color);
                 color: map-get(v.$web-colors, black-color);
@@ -68,14 +69,12 @@ nav {
             }
         }
 
-        .hamburger {
-            display: none;
+    .hamburger {
+        display: none;
 
-            @media screen and (max-width: 900px) {
-                @include m.flex(row, center, center, null, 40px);
-                font-size: 28px;
-                align-self: stretch;
-            }
+        @media (max-width: 900px) {
+            display: inline;
+            font-size: 28px;
         }
     }
 }

@@ -129,6 +129,11 @@ nav .navbar ul {
   flex-direction: row;
   gap: 40px;
 }
+@media (max-width: 900px) {
+  nav .navbar ul {
+    display: none;
+  }
+}
 nav .navbar ul li {
   text-decoration: none;
 }
@@ -136,7 +141,13 @@ nav .navbar .action-btns {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  align-items: center;
   gap: 20px;
+}
+@media (max-width: 900px) {
+  nav .navbar .action-btns {
+    display: none;
+  }
 }
 nav .navbar .action-btns .search-bar {
   display: flex;
@@ -176,10 +187,14 @@ nav .navbar .action-btns .search-bar i {
   margin-right: 10px;
   font-size: 24px;
 }
-nav .navbar .action-btns .btn {
-  padding: 16px 20px;
-  background: #3D00B7;
-  border-radius: 60px;
+nav .navbar .hamburger {
+  display: none;
+}
+@media (max-width: 900px) {
+  nav .navbar .hamburger {
+    display: inline-flex;
+    font-size: 28px;
+  }
 }
 
 .first {
@@ -262,7 +277,7 @@ nav .navbar .action-btns .btn {
   gap: 20px;
 }
 .first .headspace .artwork .active-art .over-art .first-part h1 {
-  color: #FFF;
+  color: white;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -276,7 +291,7 @@ nav .navbar .action-btns .btn {
   gap: 16px;
 }
 .first .headspace .artwork .active-art .over-art .first-part .a-line p {
-  color: #FFF;
+  color: white;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -369,8 +384,17 @@ nav .navbar .action-btns .btn {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .second .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
 .second .services .amazing-nft h1 {
-  color: #000;
+  color: black;
   font-family: "Candal", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -383,6 +407,15 @@ nav .navbar .action-btns .btn {
   display: flex;
   align-items: start;
   gap: 120px;
+}
+@media (max-width: 900px) {
+  .second .services .even-heads {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
 }
 .second .services .even-heads .first-service {
   display: flex;
@@ -405,8 +438,16 @@ nav .navbar .action-btns .btn {
   flex-direction: column;
   gap: 16px;
 }
+@media (max-width: 900px) {
+  .second .services .even-heads .first-service .two-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+}
 .second .services .even-heads .first-service .two-line h3 {
-  color: #000;
+  color: black;
   font-family: "DM Sans";
   font-size: 20px;
   font-style: normal;
@@ -414,7 +455,7 @@ nav .navbar .action-btns .btn {
   line-height: normal;
 }
 .second .services .even-heads .first-service .two-line p {
-  color: #696969;
+  color: #C0C0C0;
   font-family: "DM Sans";
   font-size: 14px;
   font-style: normal;
@@ -430,6 +471,15 @@ nav .navbar .action-btns .btn {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 900px) {
+  .third .trends {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+  }
 }
 .third .trends .first-col {
   display: flex;
@@ -461,7 +511,7 @@ nav .navbar .action-btns .btn {
   gap: 5px;
 }
 .third .trends .first-col .profile-info .prof-one .username h2 {
-  color: #000;
+  color: black;
   font-family: "DM Sans";
   font-size: 20px;
   font-style: normal;
@@ -508,6 +558,15 @@ nav .navbar .action-btns .btn {
   flex-direction: row;
   gap: 20px;
 }
+@media (max-width: 900px) {
+  .third .trends .second-col .one-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
 .third .trends .second-col .one-post .post-preview img {
   width: 147px;
   height: 147px;
@@ -520,7 +579,7 @@ nav .navbar .action-btns .btn {
   gap: 10px;
 }
 .third .trends .second-col .one-post .post-info .post-name h1 {
-  color: #000;
+  color: black;
   font-family: "DM Sans";
   font-size: 20px;
   font-style: normal;
@@ -565,7 +624,7 @@ nav .navbar .action-btns .btn {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  border-left: 1px solid rgba(190, 190, 190, 0.64);
+  border-left: 1px solid rgba(222, 222, 222, 0.64);
 }
 .third .trends .third-col .trend-head {
   padding: 10px 20px;
@@ -598,14 +657,14 @@ nav .navbar .action-btns .btn {
 .third .trends .third-col .trend-ranking .ranking {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  border-bottom: 1px solid rgba(190, 190, 190, 0.64);
+  gap: 18px;
+  border-bottom: 1px solid rgba(222, 222, 222, 0.64);
   padding: 10px 15px;
 }
 .third .trends .third-col .trend-ranking .ranking .number h3 {
-  color: #000;
+  color: black;
   text-align: center;
   font-family: "DM Sans";
   font-size: 24px;
@@ -637,7 +696,7 @@ nav .navbar .action-btns .btn {
   gap: 3px;
 }
 .third .trends .third-col .trend-ranking .ranking .name-prof h1 {
-  color: #000;
+  color: black;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -648,7 +707,7 @@ nav .navbar .action-btns .btn {
 }
 .third .trends .third-col .trend-ranking .ranking .name-prof p {
   color: #636363;
-  font-family: Poppins;
+  font-family: "DM Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -656,10 +715,19 @@ nav .navbar .action-btns .btn {
   /* 14.42px */
   letter-spacing: -0.35px;
 }
-.third .trends .third-col .trend-ranking .ranking .value h1 {
-  color: #14C8B0;
+.third .trends .third-col .trend-ranking .ranking .green-value h1 {
+  color: #00AC4F;
   text-align: right;
-  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 103%;
+  /* 20.6px */
+  letter-spacing: -0.5px;
+}
+.third .trends .third-col .trend-ranking .ranking .red-value h1 {
+  color: #FF002E;
+  text-align: right;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -669,4 +737,128 @@ nav .navbar .action-btns .btn {
 }
 .third .trends .third-col .trend-ranking .no-bottom {
   border-bottom: none;
+}
+
+.forth {
+  background: rgba(217, 224, 236, 0.2);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  padding: 60px 80px;
+}
+.forth .collections {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 55px;
+}
+.forth .collections .sub-heading h1 {
+  color: black;
+  font-family: "Candal", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 900px) {
+  .forth .collections .sub-heading h1 {
+    font-size: 16px;
+  }
+}
+.forth .collections .collection-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .forth .collections .collection-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+}
+.forth .collections .collection-part .collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .forth .collections .collection-part .collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+}
+.forth .collections .collection-part .collection .collection-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.forth .collections .collection-part .collection .collection-pics .popular-pic img {
+  width: 265.852px;
+  height: 272.269px;
+}
+.forth .collections .collection-part .collection .collection-pics .other-pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.forth .collections .collection-part .collection .collection-pics .other-pics img {
+  width: 103.591px;
+  height: 85.256px;
+}
+.forth .collections .collection-part .collection .who-made {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .forth .collections .collection-part .collection .who-made {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+.forth .collections .collection-part .collection .who-made .collection-name h1 {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.forth .collections .collection-part .collection .who-made .collectionist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .forth .collections .collection-part .collection .who-made .collectionist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.forth .collections .collection-part .collection .who-made .collectionist .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.forth .collections .collection-part .collection .who-made .collectionist .profile img {
+  width: 36px;
+  height: 36px;
+}
+.forth .collections .collection-part .collection .who-made .collectionist .profile h3 {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */

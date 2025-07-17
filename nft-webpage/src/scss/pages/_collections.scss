@@ -1,0 +1,107 @@
+@use "../vendors/variables" as v;
+@use "../vendors/mixin" as m;
+
+.forth {
+    background: map-get(v.$colors, dark-gray);
+    backdrop-filter: blur(25px);
+    padding: 60px 80px;
+
+    .collections {
+        @include m.flex(column, start, null, null, 55px);
+
+        .sub-heading {
+            h1 {
+                color: map-get(v.$colors, black-color);
+                font-family: v.$head-font;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                @media (max-width: 900px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .collection-part {
+            @include m.flex(row, space-between, null, null, null);
+
+
+                @media (max-width: 900px) {
+                    @include m.flex(column, start, null, null, 20px);
+                }
+
+            .collection {
+                @include m.flex(column, start, null, null, 20px);
+                @media (max-width: 900px) {
+                    @include m.flex(column, start, null, null, 20px);
+                }
+
+                .collection-pics {
+                    @include m.flex(row, center, null, null, 20px);
+
+                    .popular-pic {
+                        img {
+                            width: 265.852px;
+                            height: 272.269px;
+                        }
+                    }
+
+                    .other-pics {
+                        @include m.flex(column, space-between, null, null, null);
+
+                        img {
+                            width: 103.591px;
+                            height: 85.256px;
+                        }
+                    }
+                }
+
+                .who-made {
+                    @include m.flex(column, null, null, null, null);
+
+                    @media (max-width: 600px) {
+                        @include m.flex(column, start, start, null, null);
+                    }
+
+                    .collection-name {
+                        h1 {
+                            color: map-get(v.$colors, black-color);
+                            font-family: v.$base-font;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+
+                    .collectionist {
+                        @include m.flex(row, space-between, null, null, null);
+
+                        @media (max-width: 600px) {
+                            @include m.flex(column, center, center, null, 20px);
+                        }
+
+                        .profile {
+                            @include m.flex(row, null, center, null, 10px);
+
+                            img {
+                                width: 36px;
+                                height: 36px;
+                            }
+
+                            h3 {
+                                color: map-get(v.$colors, black-color);
+                                font-family: v.$base-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

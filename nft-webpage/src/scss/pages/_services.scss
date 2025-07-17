@@ -2,7 +2,7 @@
 @use "../vendors/mixin" as m;
 
 .second {
-    background: rgba(217, 224, 236, 0.20);
+    background: map-get(v.$colors, dark-gray);
     backdrop-filter: blur(25px);
     padding: 60px 80px;
     @include m.flex(null, null, center, null, null);
@@ -10,9 +10,13 @@
     .services {
         @include m.flex(row, space-between, center, null, null);
 
+        @media (max-width: 900px) {
+            @include m.flex(column, center, center, null, 50px);
+        }
+
         .amazing-nft {
             h1 {
-                color: #000;
+                color: map-get(v.$colors, black-color);
                 font-family: v.$head-font;
                 font-size: 28px;
                 font-style: normal;
@@ -25,6 +29,12 @@
 
         .even-heads {
             @include m.flex(null, null, start, null, 120px);
+
+
+            @media (max-width: 900px) {
+                @include m.flex(column, center, center, null, 40px);
+            }
+
             .first-service {
                 @include m.flex(row, null, start, null, 10px);
 
@@ -40,8 +50,12 @@
                 .two-line {
                     @include m.flex(column, null, null, null, 16px);
 
+                    @media (max-width: 900px) {
+                        @include m.flex(column, center, null, null, 40px);
+                    }
+
                     h3 {
-                        color: #000;
+                        color: map-get(v.$colors, black-color);
                         font-family: "DM Sans";
                         font-size: 20px;
                         font-style: normal;
@@ -50,7 +64,7 @@
                     }
 
                     p {
-                        color: #696969;
+                        color: map-get(v.$colors, gray-color);
                         font-family: "DM Sans";
                         font-size: 14px;
                         font-style: normal;

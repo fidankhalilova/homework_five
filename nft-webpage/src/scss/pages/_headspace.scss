@@ -5,6 +5,7 @@
     padding: 60px 80px;
 
     .headspace {
+
         .heading {
             @include m.flex(column, null, null, null, 30px);
 
@@ -39,6 +40,7 @@
 
                 .stat {
                     @include m.flex(column, null, null, null, null);
+
                     h1 {
                         font-family: v.$sec-head-font;
                         font-weight: 900;
@@ -76,7 +78,7 @@
                         @include m.flex(column, null, null, null, 20px);
 
                         h1 {
-                            color: #FFF;
+                            color: map-get(v.$colors, white-color);
                             font-size: 28px;
                             font-style: normal;
                             font-weight: 700;
@@ -88,7 +90,7 @@
                             @include m.flex(row, null, center, null, 16px);
 
                             p {
-                                color: #FFF;
+                                color: map-get(v.$colors, white-color);
                                 font-size: 20px;
                                 font-style: normal;
                                 font-weight: 700;
