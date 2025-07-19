@@ -101,7 +101,7 @@
 
                     .blur-bg {
                         @include m.flex(row, null, null, null, 30px);
-                        border-radius: 12px;
+                        @include m.isCircle(sm-size);
                         background: rgba(255, 255, 255, 0.20);
                         backdrop-filter: blur(25px);
                         padding: 18px 40px;

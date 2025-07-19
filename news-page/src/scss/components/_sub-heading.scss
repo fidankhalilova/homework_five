@@ -13,7 +13,7 @@
         }
 
         .subH-text {
-            @include m.flex(column, start, null, null, 20px);
+            @include m.flex(column, flex-start, null, null, 20px);
 
             .sub-cat-one {
                 width: 226px;

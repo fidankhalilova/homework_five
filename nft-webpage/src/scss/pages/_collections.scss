@@ -7,7 +7,7 @@
     padding: 60px 80px;
 
     .collections {
-        @include m.flex(column, start, null, null, 55px);
+        @include m.flex(column, flex-start, null, null, 55px);
 
         .sub-heading {
             h1 {
@@ -28,13 +28,13 @@
 
 
                 @media (max-width: 900px) {
-                    @include m.flex(column, start, null, null, 20px);
+                    @include m.flex(column, flex-start, null, null, 20px);
                 }
 
             .collection {
-                @include m.flex(column, start, null, null, 20px);
+                @include m.flex(column, flex-start, null, null, 20px);
                 @media (max-width: 900px) {
-                    @include m.flex(column, start, null, null, 20px);
+                    @include m.flex(column, flex-start, null, null, 20px);
                 }
 
                 .collection-pics {
@@ -61,7 +61,7 @@
                     @include m.flex(column, null, null, null, null);
 
                     @media (max-width: 600px) {
-                        @include m.flex(column, start, start, null, null);
+                        @include m.flex(column, flex-start, flex-start, null, null);
                     }
 
                     .collection-name {

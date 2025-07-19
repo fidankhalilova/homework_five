@@ -28,7 +28,7 @@
         }
 
         .even-heads {
-            @include m.flex(null, null, start, null, 120px);
+            @include m.flex(null, null, flex-start, null, 120px);
 
 
             @media (max-width: 900px) {
@@ -36,7 +36,7 @@
             }
 
             .first-service {
-                @include m.flex(row, null, start, null, 10px);
+                @include m.flex(row, null, flex-start, null, 10px);
 
                 .one-line {
                     @include m.flex(row, center, center, null, 10px);

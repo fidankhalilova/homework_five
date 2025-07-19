@@ -9,7 +9,7 @@
         @include m.flex(column, null, null, null, 16px);
 
         .first-head {
-            @include m.flex(row, start, center, null, null);
+            @include m.flex(row, flex-start, center, null, null);
 
             h1 {
                 color: map-get(v.$web-colors, white-color);
@@ -27,10 +27,10 @@
         }
 
         .one-line {
-            @include m.flex(row, start, null, null, 50px);
+            @include m.flex(row, flex-start, null, null, 50px);
 
             @media (max-width: 900px) {
-                @include m.flex(column, start, null, null, 50px);
+                @include m.flex(column, flex-start, null, null, 50px);
             }
 
             h1 {
@@ -44,7 +44,7 @@
 
                 @media (max-width: 900px) {
                     font-size: 24px;
-                    @include m.flex(row, start, null, null, 50px);
+                    @include m.flex(row, flex-start, null, null, 50px);
                 }
             }
 

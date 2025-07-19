@@ -8,7 +8,7 @@
         @include m.flex(row, space-between, center, null, null);
 
         @media (max-width: 900px) {
-            @include m.flex(column, start, center, null, 40px);
+            @include m.flex(column, flex-start, center, null, 40px);
         }
 
         .first-col {
@@ -99,7 +99,7 @@
                 }
 
                 .post-info {
-                    @include m.flex(column, center, start, null, 10px);
+                    @include m.flex(column, center, flex-start, null, 10px);
 
                     .post-name {
                         h1 {
@@ -130,7 +130,7 @@
                             line-height: normal;
                             border: 1px solid #00AC4F;
                             padding: 5px;
-                            border-radius: 6px;
+                            @include m.isCircle(xs-size);
                         }
 
                         p {

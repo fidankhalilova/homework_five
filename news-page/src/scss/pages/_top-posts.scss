@@ -47,7 +47,7 @@
                 @include m.flex(row, space-between, center, nowrap, 80px);
 
                 .acts-btns {
-                    @include m.flex(row, space-between, start, nowrap, 20px);
+                    @include m.flex(row, space-between, flex-start, nowrap, 20px);
 
                     .likes {
                         @include m.flex(row, center, center, nowrap, 5px);

@@ -4,7 +4,7 @@
 .inside-fill {
     @include m.flex(row, null, center, null, null);
     padding: 16px 20px;
-    border-radius: 60px;
+    @include m.isCircle(btn-size);
     background: map-get(v.$colors, purple-color);
     color: map-get(v.$colors, white-color);
     border: 2px solid map-get(v.$colors, purple-color);
@@ -20,7 +20,7 @@
 .inside-none {
     @include m.flex(row, null, center, null, null);
     padding: 16px 20px;
-    border-radius: 60px;
+    @include m.isCircle(btn-size);
     background: map-get(v.$colors, white-color);
     color: map-get(v.$colors, purple-color);
     border: 2px solid map-get(v.$colors, purple-color);

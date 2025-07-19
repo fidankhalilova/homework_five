@@ -13,7 +13,7 @@
 
         .blog-img {
             @media (max-width: 900px) {
-                @include m.flex(row, start, null, null, 30px);
+                @include m.flex(row, flex-start, null, null, 30px);
             }
 
             img {
@@ -37,7 +37,6 @@
                 @include m.flex(column, null, null, null, 20px);
 
                 h3 {
-                    // @include flex(column, start, center, nowrap, 14px);
                     color: map-get(v.$web-colors, white-color);
                     font-size: 24px;
                     font-style: normal;
@@ -99,7 +98,7 @@
                 @include m.flex(row, space-between, center, null, null);
 
                 .act-btns {
-                    @include m.flex(row, space-between, start, null, 20px);
+                    @include m.flex(row, space-between, flex-start, null, 20px);
 
                     .likes {
                         @include m.flex(row, center, center, null, 5px);

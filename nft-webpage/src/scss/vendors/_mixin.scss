@@ -1,3 +1,4 @@
+@use "sass:math";
 @mixin flex(
     $direction: null,
     $justify: null,
@@ -11,4 +12,19 @@
     align-items: $align;
     flex-wrap: $wrap;
     gap: $gap;
+}
+
+@mixin isCircle($circle: null) {
+  @if ($circle == "btn-size") {
+    border-radius: 60px;
+  }
+  @else if ($circle == "full-size") {
+    border-radius: 100px;
+  }
+  @else if ($circle == "sm-size") {
+    border-radius: 12px;
+  }
+  @else if ($circle == "xs-size") {
+    border-radius: 6px;
+  }
 }

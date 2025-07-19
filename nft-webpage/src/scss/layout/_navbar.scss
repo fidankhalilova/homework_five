@@ -39,7 +39,7 @@ nav {
 
             .search-bar {
                 @include m.flex(row, space-between, center, null, 20px);
-                border-radius: 100px;
+                @include m.isCircle(full-size);
                 border: 2px solid map-get(v.$colors, gray-color);
                 background: map-get(v.$colors, white-color);
                 width: 300px;

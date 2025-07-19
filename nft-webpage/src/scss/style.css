@@ -405,7 +405,7 @@ nav .navbar .hamburger {
 }
 .second .services .even-heads {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 120px;
 }
 @media (max-width: 900px) {
@@ -420,7 +420,7 @@ nav .navbar .hamburger {
 .second .services .even-heads .first-service {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   gap: 10px;
 }
 .second .services .even-heads .first-service .one-line {
@@ -476,7 +476,7 @@ nav .navbar .hamburger {
   .third .trends {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 40px;
   }
@@ -575,7 +575,7 @@ nav .navbar .hamburger {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   gap: 10px;
 }
 .third .trends .second-col .one-post .post-info .post-name h1 {
@@ -748,7 +748,7 @@ nav .navbar .hamburger {
 .forth .collections {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 55px;
 }
 .forth .collections .sub-heading h1 {
@@ -773,21 +773,21 @@ nav .navbar .hamburger {
   .forth .collections .collection-part {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 20px;
   }
 }
 .forth .collections .collection-part .collection {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 20px;
 }
 @media (max-width: 900px) {
   .forth .collections .collection-part .collection {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 20px;
   }
 }
@@ -818,8 +818,8 @@ nav .navbar .hamburger {
   .forth .collections .collection-part .collection .who-made {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 .forth .collections .collection-part .collection .who-made .collection-name h1 {
